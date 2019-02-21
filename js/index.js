@@ -42,18 +42,18 @@ document.addEventListener('deviceready', function()
     {
         galleryAPI.getMedia(albumName, function(items)
         {
-          //  var html = "";
+            var html = "";
 
             for(var i = 0; i < items.length; i++)
             {
                 var media = items[i];
                 alert(media.thumbnail);
-            //    html += '<a href="javascript:void()" class="media"><img src="' + media.thumbnail + '" /></a>';
+                html += '<a href="javascript:void()" class="media"><img src="' + media.thumbnail + '" /></a>';
             }
-//            document.getElementById("content").innerHTML = "";
-  //          document.write(media.thumbnail);
+            document.getElementById("content").innerHTML = "";
+            document.write(media.thumbnail);
 
-            //$content.innerHTML = html;
+            $content.innerHTML = html;
 
         }, function(error){alert(error);});
     };
