@@ -1,3 +1,4 @@
+/*
     var db = sqlitePlugin.openDatabase({
         name: 'MetaGaleria.db',
         location: 'default',
@@ -13,7 +14,7 @@
         console.log('Populated database OK');
         alert("base de datos creada");
     });
-
+*/
 document.addEventListener('deviceready', function()
 {
     var $content = document.getElementById("content");
@@ -22,18 +23,18 @@ document.addEventListener('deviceready', function()
 
     galleryAPI.getAlbums(function(items)
     {
-        //var html = "";
-            //html += '<a href="javascript:loadAlbum(\'' + album.title + '\')" class="album"><span>' + escape(album.title) + '</span></a>';
+        var html = "";
+            html += '<a href="javascript:loadAlbum(\'' + album.title + '\')" class="album"><span>' + escape(album.title) + '</span></a>';
 
         for(var i = 0; i < items.length; i++)
         {
             var album = items[i];
 
-            //html += '<a href="javascript:loadAlbum(\'' + album.title + '\')" class="album"><span>' + escape(album.title) + '</span></a>';
-            window.loadAlbum(album.title);
+            html += '<a href="javascript:loadAlbum(\'' + album.title + '\')" class="album"><span>' + escape(album.title) + '</span></a>';
+            //window.loadAlbum(album.title);
         }
 
-        //$content.innerHTML = html;
+        $content.innerHTML = html;
 
     }, function(error){alert(error);});
 
