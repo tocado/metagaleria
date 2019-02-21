@@ -16,6 +16,6 @@
   </author>
   
   <plugin spec="https://github.com/subitolabs/cordova-gallery-api.git#f6f3aa0" />
-  <plugin spec="https://github.com/litehelpers/Cordova-sqlite-evcore-extbuild-free.git" />
+  <plugin spec="https://github.com/litehelpers/Cordova-sqlite-evcore-extbuild-free.git" /z>
   <!--plugin spec="https://github.com/LordKBX/cordova-plugin-file-hash.git" /-->
 </widget>
