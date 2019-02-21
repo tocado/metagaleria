@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "com.harkonnen.metagaleria"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+  <name>Meta Galeria</name>
+
+  <description>
+      Metagaleria para encontrar lo que queres cuando lo queres.
+  </description>
+
+  <author href="https://www.linkedin.com/in/tocado157" email="tocado157@gmail.com">
+      ToCaDo157
+  </author>
+  
+  <plugin spec="https://github.com/subitolabs/cordova-gallery-api.git#f6f3aa0" />
+  <plugin spec="https://github.com/litehelpers/Cordova-sqlite-evcore-extbuild-free.git" />
+  <!--plugin spec="https://github.com/LordKBX/cordova-plugin-file-hash.git" /-->
+</widget>
